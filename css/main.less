@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+
+.main-wrapper {
+  //http://www.bootcss.com/p/font-awesome/ //字体图标
+  background: #444 url("../img/banner2.jpg") no-repeat;
+  background-attachment: fixed; //不让他移动//固定背景；
+  //background-size:cover;//背景覆盖；
+  background-size: cover; //以什么方式确认大小
+  background-position: center center;
+}
+
+.clearfix:after { //专门清除浮动
+  content: '';
+  display: block;
+  clear: both;
+
+}
+
+button {
+  border: none;
+  //background: url("")
+  color: #eeeeee;
+  padding: 10px 60px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+button span {
+  font-size: 25px;
+}
+
+.top {
+  width: 100%;
+  height: 27px;
+  background: url(../img/top_bg.jpg) repeat-x;
+}
+
+.top_content {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 27px;
+}
+
+.top_content li {
+  float: right;
+  list-style-image: url(../img/arrow.jpg);
+  width: 70px;
+  margin-right: 20px;
+}
+
+.top_content a:link, .top_content a:visited {
+  color: #8E8E8E;
+  text-decoration: none;
+}
+
+.top_content a:hover, .top_content a:active {
+  color: #C00;
+  text-decoration: none;
+}
+
+nav {
+  background-color: transparent;
+  height: 50px;
+  margin-top: 0;
+}
+
+#banner {
+  background: transparent; //设置透明色
+  height: 700px;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li, nav .logo {
+  display: inline-block;
+  line-height: 50px; //行高
+  margin-right: 20px;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  float: right;
+}
+
+nav ul li a {
+  line-height: inherit; //继承
+  display: inline-block; //更改成行内元素
+  height: 50px;
+}
+
+.logo {
+  float: left;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-left: 10px;
+
+}
+
+.logo a, nav ul li a, .text-section h2, .text-section p, .sub-heading {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#banner .inner {
+  /*最大宽度 300 */
+  max-width: 300px; //
+  text-align: center;
+  margin: 0 auto;
+  position: relative; //调整位置
+  top: 160px;
+}
+
+.sub_heading {
+  color: #eeeeee;
+}
+
+.inner h1 {
+  margin: 0;
+  font-size: 27px;
+  color: #eeeeee;
+}
+
+#banner button {
+  padding: 14px 60px;
+}
+
+#banner .inner .more {
+  margin-top: 230px;
+  color: #eeeeee;
+}
+.inner .more a{
+  color: dodgerblue;
+}
+.inner .more a:hover{
+  color: #2aabd2;
+}
+.sub-heading {
+  line-height: 30px;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+a{text-decoration:none;}
+
+.hr {
+  height: 2px;
+  width: 100%;
+  margin: 20px auto;
+  background-color: #07f5ff;
+}
+
+.green-section {
+  background: #087e91;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.green-section .hr {
+  background-color: #077494;
+  width: 60%;
+}
+
+.green-section .icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ebed5e;
+  transform: rotate(45deg);
+  margin: 15px;
+}
+
+.icon-group {
+  margin-top: 20px;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.gray-section .img-section {
+  width: 45%;
+}
+
+.article-preview .text-section {
+  width: 55%;
+  position: relative;
+  top: 68px;
+  left: 50px;
+}
+
+.article-preview > div {
+  float: left;
+  font-size: 0;
+}
+
+.article-preview:after {
+  content: '';
+  display: block; //父元素清除浮动
+  clear: both; //浮动清除 高度又由子元素确定
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.text-section h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.gray-section {
+  background-color: #20292e;
+}
+
+.text-section > * {
+  max-width: 90%;
+}
+
+.article-preview:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+//奇数选择器， 只要是奇数 就给他一个透明度 添加了一个蒙版
+
+//rgba(255,255,255,0.05);
+.purple-section {
+  padding: 80px;
+  background-color: #5d9e8e;
+  color: #FFFFFF;
+}
+
+.purple-section .heading-wrapper {
+  text-align: center;
+}
+
+.purple-section .hr {
+  background-color: #FF9900;
+  width: 80%;
+}
+
+.card {
+  float: left;
+  width: 50%;
+  /*最小高度*/
+  min-height: 300px;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  //border: 1px solid red;
+}
+
+.card:first-child {
+  background: rgba(0, 0, 0, 0.04)
+}
+
+//不透明度为0.05的黑 first-child第一个子元素
+.card:nth-child(2) {
+  background: rgba(0, 0, 0, 0.08)
+}
+
+.card:nth-child(3) {
+  background: rgba(0, 0, 0, 0.12)
+}
+
+.card:nth-child(4) {
+  background: rgba(0, 0, 0, 0.16)
+}
+
+footer {
+  background-color: #9ACC99;
+  min-height: 200px;
+  color: #000000;
+  text-align: center;
+}
+
+.share-group {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+
+}
+
+.share-group a:link, .share-group a:visited {
+  color: #8E8E8E;
+  text-decoration: none;
+}
+
+.logo ul li a:hover, .logo ul li a:active,
+.share-group a:hover, .share-group a:active {
+  color: #61ed48;
+  text-decoration: none;
+}
+
+.share-group li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  //overflow: hidden;
+}
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.logo ul li a:hover{
+  color: #60ff2f;
+}
+//a:link 指正常的未被访问过的链接；
+//　　a:active 指正在点的链接；
+//　　a:hover 指鼠标在链接上；
+//　　a:visited 指已经访问过的链接；
+//　　text-decoration是文字修饰效果的意思；
+//　　none参数表示超链接文字不显示下划线；
+//　　underline参数表示超链接的文字有下划线
+/*backgroud:rgba(0,0,0,0.4);指的是背景的透明度；
+backgroud:transparent;设置背景为透明；
+backgroud：fixed;把背景图片固定。
+backgroud-size:cover;背景图片设置为封面，把图片扩展到整个页面；
+backgroud-posotion:center center;居中
+backgroud:url(../img/banner.jgp);背景所插入的图片。*/
